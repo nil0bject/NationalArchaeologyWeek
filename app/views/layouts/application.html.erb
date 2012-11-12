@@ -1,14 +1,27 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>NationalArchaeologyWeek</title>
+  <title>National Archaeology Week</title>
   <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= stylesheet_link_tag    "screen", :media => "screen" %>
+  <%= stylesheet_link_tag    "handheld", :media => "handheld" %>
   <%= javascript_include_tag "application" %>
+  <%= javascript_include_tag "jquery" %>
   <%= csrf_meta_tags %>
 </head>
 <body>
 
-<%= yield %>
+<div id="menu">
+  <%= render "menu" %>
+</div>
+
+<div id="body_content">
+  <%= yield %>
+</div>
+
+<script type="text/javascript">
+  $("*").fadeIn(1000);
+</script>
 
 </body>
 </html>

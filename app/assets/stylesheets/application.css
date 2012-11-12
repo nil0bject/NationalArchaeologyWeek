@@ -11,3 +11,12 @@
  *= require_self
  *= require_tree .
  */
+
+* {
+  display: none;
+}
+
+#menu_icon {
+  font-weight:bold;
+  font-size: 24px;
+}

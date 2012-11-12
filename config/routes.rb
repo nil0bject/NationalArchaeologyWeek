@@ -1,4 +1,10 @@
 NationalArchaeologyWeek::Application.routes.draw do
+  root :to => 'index#index'
+  
+  resources :users
+
+  resources :news
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
